@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="es-CL">
     <head>
-        <title>Funciones_jquery</title>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="" />
-        <meta name="author" content="Yo" />
+        <meta name="author" content="" />
+        <title>API Clima</title>
+
         <!--link bootstrap-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css"/>
 
         <!--CSS propio-->
+        <!-- <link rel="stylesheet" href="sytle.css"/> -->
 
         <!-- JS Jquery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
         
-        <script>
-            $(document).ready(function(){
-               
-                             
-            });
-        </script>
     </head>
     <body>
-       
-        
-        <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.js"></script>
+        <div class="container">
+            <div class="row text-center bg-primary text-white border-radius-3 p-5 mb-4">
+                <h1 class="display-1">Mi aplicación del Clima!!!</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <form id="my_form" action="">
+                                <div class="input-group">
+                                    <input class="form-control" placeholder="Ingrese nombre ciudad" type="text" name="ciudad_buscada" id="ciudad_buscada">
+                                    <button class="btn btn-primary" type="button" id="buscar_ciudad">Buscar</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            
+                        </div>
+                        <div class="card-footer">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mb-4 text-center">
+                    <img class="d-none d-md-block" src="http://picsum.photos/500/1200" alt="Imagen aleatoria">
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.js"></script>
+        <script src="scripts.js"></script>
     </body>
 </html>
